@@ -15,7 +15,8 @@ st.title("E-MoXion 📚🧠")
 # =========================
 # DATA
 # =========================
-df_final = pd.read_csv("../books.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "../books.csv")
+df_final = pd.read_csv(csv_path)
 
 os.makedirs("data", exist_ok=True)
 PATH = "data/journal.csv"
